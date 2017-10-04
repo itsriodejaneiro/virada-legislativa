@@ -6,14 +6,57 @@
 	<title>Virada Legislativa</title>
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<link media="all" rel="stylesheet" href="css/lightbox.css">
+	<link media="all" rel="stylesheet" href="css/iziModal.css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/lightbox.js"></script>
+	<script src="js/iziModal.js"></script>
+	<script>
+
+		$(function() {
+			$("#modal-default").iziModal();
+
+			$(document).on('click', '.trigger', function (event) {
+				event.preventDefault();
+				$('#modal-default').iziModal('open');
+			});
+		});
+	</script>
 </head>
 <body>
-	<div id="modal-">
-
-
+	<div id="modal-default">
+		<div class="container small">
+			<div class="row">
+				<div class="colored-title">
+					<h1>Inscreva-se como...</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-two">
+					<article class="bordered-right">
+						<div class="top-part">
+							<h4 class="tomato-text">Facilitador</h4>
+							<p>Descrição curta com no máximo 280 caracteres é o que você tem para descrever esse material. Tem 6 linhas no máximo por causa disso. Descrição curta com no máximo 280 caracteres é o que você tem para descrever esse material. Tem 6 linhas no máximo por causa disso.</p>
+						</div>
+						<div class="bottom-part">
+							<a class="bold" target="_blank"  href="https://itsrio2.typeform.com/to/ksESfN">Inscrever-me como facilitadora/facilitador</a>
+						</div>
+					</article>
+				</div>
+				<div class="col-two">
+					<article>
+						<div class="top-part">
+							<h4 class="tomato-text">Participante</h4>
+							<p>Descrição curta com no máximo 280 caracteres é o que você tem para descrever esse material. Tem 6 linhas no máximo por causa disso. Descrição curta com no máximo 280 caracteres é o que você tem para descrever esse material. Tem 6 linhas no máximo por causa disso.</p>
+						</div>
+						<div class="bottom-part">
+							<a class="bold" target="_blank" href="https://itsrio2.typeform.com/to/HjDJQN">Inscrever-me como participante</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="wrapper">
 		<header id="header" class="large" style="background-image: url(images/header-bg.png);">
@@ -45,7 +88,7 @@
 								<div class="text-wrap">
 									<div class="yellow-wrap">
 										<div class="text-block">
-											<h2>INSCREVA-SE</h2>
+											<h2><a href="#" class="trigger">INSCREVA-SE</a></h2>
 										</div>
 									</div>
 								</div>
