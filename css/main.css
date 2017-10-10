@@ -426,10 +426,21 @@ h6, .h6,
   font-weight: bold;
   margin: 0;
   color: inherit; }
+  h1 a, .h1 a,
+  h2 a, .h2 a,
+  h3 a, .h3 a,
+  h4 a, .h4 a,
+  h5 a, .h5 a,
+  h6 a, .h6 a,
+  .h a {
+    color: #333; }
 
-h2 a {
-  color:#000000;
-}
+div a {
+  color: #333; }
+
+a:hover {
+  color: #333; }
+
 h1, .h1 {
   font-size: 80px; }
 
@@ -453,8 +464,7 @@ p {
 
 a {
   color: #52c7de;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 form,
 fieldset {
@@ -536,8 +546,7 @@ input[type='submit'] {
 #header {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  min-height: 180px; }
+  background-size: cover; }
   #header.large {
     min-height: 235px; }
 
