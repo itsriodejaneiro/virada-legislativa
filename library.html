@@ -18,6 +18,32 @@
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
+				if( target.length ) {
+					event.preventDefault();
+					$('html, body').stop().animate({
+						scrollTop: (target.offset().top - $('.navigation').height() - 50)
+					}, 1000);
+				}
+			});
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 150) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+		});
+
+
+	</script>
 </head>
 
 <body>
@@ -37,7 +63,6 @@
 					<li>
 						<a href="library.html">BIBLIOTECA</a>
 					</li>
-					<!--<li><a href="library.html">BIBLIOTECA</a></li>-->
 				</ul>
 			</nav>
 		</header>
@@ -48,10 +73,10 @@
 				</div>
 			</div>
 
-			<section class="tabs">
+			<section class="tabs" id="menu-tabs">
 				<div class="container">
 					<ul class="list-unstyled list-inline tab-list">
-						<li class="active">
+						<li>
 							<a href="#tab1">
 								<img src="images/img-tab1.png" alt="tab img">Videos</a>
 						</li>
@@ -379,6 +404,8 @@
 				</div>
 			</section>
 		</main>
+        <!-- Return to Top -->
+        <a href="#menu-tabs" id="return-to-top"><i class="icon-chevron-up"></i></a>
 	</div>
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107572103-1"></script>
