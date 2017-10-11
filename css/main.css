@@ -426,14 +426,6 @@ h6, .h6,
   font-weight: bold;
   margin: 0;
   color: inherit; }
-  h1 a, .h1 a,
-  h2 a, .h2 a,
-  h3 a, .h3 a,
-  h4 a, .h4 a,
-  h5 a, .h5 a,
-  h6 a, .h6 a,
-  .h a {
-    color: #333; }
 
 div a {
   color: #333; }
@@ -563,11 +555,13 @@ input[type='submit'] {
       -webkit-transition: color 0.3s ease-in-out;
               transition: color 0.3s ease-in-out;
       color: #fff;
-      font-size: 16px;
+      font-size: 20px;
       font-family: "bebas", sans-serif;
       font-weight: 700; }
       .navigation .navbar li a:hover, .navigation .navbar li a:focus {
         color: #f16351; }
+    .navigation .navbar li .active {
+      color: #f16351; }
 
 .tomato {
   background-color: #f16351; }
@@ -975,6 +969,8 @@ input[type='submit'] {
     padding: 30px 40px; }
     .text-wrap .text-block h2 {
       font-family: "bebas", sans-serif; }
+      .text-wrap .text-block h2 a {
+        color: #333; }
 
 .partners {
   padding: 50px 0; }
