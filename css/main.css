@@ -1432,7 +1432,10 @@ article {
 .text-wrap .text-block h2 a {
   color: #333; }
   .text-wrap .text-block h2 a:hover, .text-wrap .text-block h2 a:focus {
-    color: #f16351; }
+    color: #fff; }
+
+article.bordered-right {
+  margin-right: -1em; }
 
 #wrapper {
   max-width: 100%; }
