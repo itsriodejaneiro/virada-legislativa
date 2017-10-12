@@ -1319,7 +1319,8 @@ article {
     article {
       padding: 0 10px; }
       article.bordered-right {
-        border-right: 1px solid #2baf79; } }
+        border-right: 1px solid #2baf79;
+        margin-right: 1em; } }
   article h4 {
     font-family: "Bitter", "Times New Roman", "Times", "Baskerville", "Georgia", serif;
     font-weight: 700;
