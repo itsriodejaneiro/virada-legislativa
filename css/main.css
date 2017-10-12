@@ -433,6 +433,9 @@ div a {
 a:hover {
   color: #333; }
 
+.hover {
+  color: pink; }
+
 h1, .h1 {
   font-size: 80px; }
 
@@ -1327,7 +1330,8 @@ article {
     font-weight: 400;
     line-height: 24px; }
   article .top-part {
-    text-align: center; }
+    text-align: center;
+    padding-top: 1em; }
     @media (min-width: 768px) {
       article .top-part {
         text-align: left; } }
@@ -1423,6 +1427,11 @@ article {
 #return-to-top:hover i {
   color: #fff;
   top: 5px; }
+
+.text-wrap .text-block h2 a {
+  color: #333; }
+  .text-wrap .text-block h2 a:hover, .text-wrap .text-block h2 a:focus {
+    color: #f16351; }
 
 #wrapper {
   max-width: 100%; }

@@ -1016,6 +1016,7 @@ article {
 
 	.top-part {
 		text-align: center;
+		padding-top: 1em;
 
 		@include media ('>=tablet') {
 			text-align: left;
@@ -1137,4 +1138,13 @@ article {
 #return-to-top:hover i {
 	color: #fff;
 	top: 5px;
+}
+
+//Adding hover to the Inscreva-se Menu
+.text-wrap .text-block h2 a {
+	color:$dark;
+	&:hover,
+	&:focus{
+		color:$tomato;
+	}
 }
