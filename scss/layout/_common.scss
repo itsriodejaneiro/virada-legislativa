@@ -1149,3 +1149,13 @@ article {
 		color:$white;
 	}
 }
+
+.list-unstyled li {
+	text-align: left;
+	a {
+		color:$green;
+		&:hover {
+			color: $tomato;
+		}	
+	}
+}

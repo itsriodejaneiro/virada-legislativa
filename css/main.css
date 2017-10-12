@@ -1434,6 +1434,13 @@ article {
   .text-wrap .text-block h2 a:hover, .text-wrap .text-block h2 a:focus {
     color: #fff; }
 
+.list-unstyled li {
+  text-align: left; }
+  .list-unstyled li a {
+    color: #2baf79; }
+    .list-unstyled li a:hover {
+      color: #f16351; }
+
 #wrapper {
   max-width: 100%; }
 
