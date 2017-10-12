@@ -1434,9 +1434,6 @@ article {
   .text-wrap .text-block h2 a:hover, .text-wrap .text-block h2 a:focus {
     color: #fff; }
 
-article.bordered-right {
-  margin-right: -1em; }
-
 #wrapper {
   max-width: 100%; }
 
