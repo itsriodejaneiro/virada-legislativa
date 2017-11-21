@@ -575,6 +575,10 @@ input[type='submit'] {
 .green {
   background-color: #2baf79; }
 
+.purple {
+  background-color: #442a65;
+}
+
 .green-opacity {
   background-color: rgba(43, 175, 121, 0.75); }
 
